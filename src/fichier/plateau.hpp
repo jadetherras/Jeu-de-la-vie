@@ -7,9 +7,9 @@ class Plateau {
 public :
     Plateau(unsigned int T, sf::Font &font);
     void draw(sf::RenderTarget& target);
-    void remove(int x,int y);
+    void remove(unsigned int x, unsigned int y);
     void update(sf::Time T);
-    int compte(int x, int y);
+    int compte(unsigned int x, unsigned int y);
     void on_run();
     void restart();
 private :

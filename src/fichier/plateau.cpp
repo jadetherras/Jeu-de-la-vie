@@ -30,12 +30,9 @@ Plateau::Plateau(unsigned int T, sf::Font &font)
     Ta.setPosition(10,0);
     this->T = Ta;
 
-    sf::Text info("space : stat/stop"
-                  "A : remove/add a cell"
-                  "R : restart", font, 10);
-    info.setStyle(sf::Text::Bold); //En gras
-    info.setFillColor(sf::Color::Black); //Couleur
-    info.setPosition(410,400);
+    sf::Text info("space : stat/stop \nA : remove/add a cell \nR : restart", font, 15);
+    info.setFillColor(sf::Color::Blue); //Couleur
+    info.setPosition(350,445);
     information = info;
 }
 
@@ -52,7 +49,7 @@ void Plateau::draw(sf::RenderTarget& target) {
     target.draw(T);
 }
 
-void Plateau::remove(int x,int y) {
+void Plateau::remove(unsigned int x,unsigned int y) {
     tableau[x/10][y/10]->remove();
 }
 
@@ -69,7 +66,7 @@ void Plateau::update(sf::Time T)  {
     }
 }
 
-int Plateau::compte(int x, int y) {
+int Plateau::compte(unsigned int x,unsigned int y) {
     int N(0);
     if(x != 0 and tableau[x-1][y]->get_vie() == sf::Color::Black) {
         ++N;
