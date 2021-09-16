@@ -1,0 +1,13 @@
+=====================================================================
+JEU DE LA VIE
+=====================================================================
+Ce programme est un défi de programmation d'un jeu de la vie. 
+La réalisation du programme devait se faire en moins de 3h, avec interface graphique.
+Commande :
+
+A : ajouter/retirer une cellule
+R : restart 
+Space : mettre en pause/lancer le jeu de la vie
+
+Le jeu de la vie est un algorithme tres populaire de simulation de vie. Les cellules prolifèrent, stagnent et meurent selon des conditions de voisinage précise.
+Utiliser l'état "stop" pour faire le motif initial des cellules (vie : noir, mort : blanc) et lancé la simulation pour voir comment l'ensemble se comporte.
